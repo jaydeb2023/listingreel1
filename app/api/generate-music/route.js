@@ -16,7 +16,7 @@ export async function POST(request) {
     const musicPrompt = MUSIC_PROMPTS[mood] || MUSIC_PROMPTS.luxury
 
     const response = await fetch(
-      'https://router.huggingface.co/models/facebook/musicgen-small',
+      'https://router.huggingface.co/hf-inference/models/facebook/musicgen-small',
       {
         method: 'POST',
         headers: {
