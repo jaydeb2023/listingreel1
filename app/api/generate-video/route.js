@@ -7,7 +7,7 @@ export async function POST(request) {
     }
 
     const response = await fetch(
-      'https://router.huggingface.co/models/cerspense/zeroscope_v2_576w',
+      'https://router.huggingface.co/hf-inference/models/cerspense/zeroscope_v2_576w',
       {
         method: 'POST',
         headers: {
